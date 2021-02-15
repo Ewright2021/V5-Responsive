@@ -1,0 +1,28 @@
+doctype html.h-100.d-flex.flex-column
+head
+  // Required meta tags
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // Bootstrap CSS
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl' crossorigin='anonymous')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css')
+
+  link(rel="stylesheet", href="/src/scss/style.css")
+  title V5 Responsive
+body.h-100.d-flex.flex-column
+    include ../components/header.pug
+
+    main.flex-grow-1.d-flex.flex-column.align-items-center.justify-content-center.py-3
+        .container
+            .row 
+                block content-wrapper
+                    .col-md-6.col-xxl-4.mx-auto.py-3.token-bg
+                        include ../components/screen-title.pug
+                        block content
+                            p Default Content Here
+    include ../components/footer.pug
+
+
+script(src='https://code.jquery.com/jquery-3.5.1.min.js')
+script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js' integrity='sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0' crossorigin='anonymous')
+script(src='/src/app.js')
