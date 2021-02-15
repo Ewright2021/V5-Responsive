@@ -222,7 +222,7 @@ function logNavitems() {
   let headerNavList = document.querySelector(".header-nav");
   let footerNavList = document.querySelector(".footer-nav");
   for (i = 0; i < navitems.length; i++) {
-    let navlistitem = `<li class="nav-item"><a class="nav-link" href="/dist/screens/${navitems[i].path}"> ${navitems[i].name}</a></li>`;
+    let navlistitem = `<li class="nav-item"><a class="nav-link" href="./${navitems[i].path}"> ${navitems[i].name}</a></li>`;
     // console.log(navlistitem);
 
     if (navitems[i].showInNav) {
