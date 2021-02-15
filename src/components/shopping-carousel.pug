@@ -1,0 +1,24 @@
+#carouselExampleControls.carousel.slide(data-bs-ride='carousel')
+    .carousel-inner
+        .carousel-item.active
+            .row
+                -for(i=0; i< 4; i++)
+                    .col-6.col-lg-3
+                        .card.mb-2
+                            .card-body 
+                                .shopping-img-wrapper.text-center
+                                    img(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400fp.gif", alt="")
+                        
+                        a.shopping-carousel-item-title.d-block.mb-2(href="#") Apple - AirPods with Charging Case (Latest Model) - White
+                        p.shopping-carousel-item-price 19,976
+                            small.text-muted  points
+        //- .carousel-item
+        //-     img.d-block.w-100(src='...' alt='...')
+        //- .carousel-item
+        //-     img.d-block.w-100(src='...' alt='...')
+    a.carousel-control-prev(href='#carouselExampleControls' role='button' data-bs-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.visually-hidden Previous
+    a.carousel-control-next(href='#carouselExampleControls' role='button' data-bs-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.visually-hidden Next

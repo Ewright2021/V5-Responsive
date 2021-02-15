@@ -1,0 +1,24 @@
+extends ../screens/layout.pug
+
+block content-wrapper
+    .col-12.mx-auto.py-3.token-bg
+        block content
+            .container
+                include ../components/shopping-navbar.pug
+                include ../components/shopping-header-image.pug
+
+                .row.mb-3
+                    .col-12
+                        h3.section-title Reward Yourself
+                    .col-12
+                        include ../components/shopping-carousel.pug
+
+
+
+                .row.mb-3
+                    .col-12
+                        h3.section-title Featured Departments
+                    .col-12
+                        include ../components/shopping-featured-categories.pug
+                .row.mb-3
+                    include ../components/shopping-disclaimer.pug

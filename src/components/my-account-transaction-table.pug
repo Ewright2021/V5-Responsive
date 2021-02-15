@@ -1,0 +1,19 @@
+.table-responsive
+    table.table.bg-white
+        thead
+            tr
+                th(scope='col') #
+                th(scope='col') Type
+                th(scope='col') Description
+                th(scope='col') Date
+                th.text-end(scope='col') Amount
+
+        tbody
+            -for(i=0;i<6; i++)
+                tr
+                    th(scope='row') 1
+                        td Purchase Items
+                        td Order Number: 
+                            a(href="./transaction-order-detail.html") DEMO3184208
+                        td 2/8/2021
+                        td.text-end 278

@@ -1,0 +1,70 @@
+extends ../screens/layout.pug
+
+block content-wrapper
+    .col-12.mx-auto.py-3.token-bg
+        block content
+            .container
+                include ../components/shopping-navbar.pug
+                .row
+                    .col-12.col-xl-8.mb-3
+                        a.d-block.mb-2(href="#")
+                            i.bi-arrow-left-circle.pe-1
+                            span Back to Search Results
+                        h4.mb-0.item-detail-item-title Apple AirPods w/ Wireless Charging Case
+                        small.font-weight-bold.pe-1 Model Number:
+                            span.item-detail-model-number MV7N2AM/A 
+                    .col-12.col-md-7.col-xl-8
+                        .card
+                            .card-body
+                                .favorite-item.text-end.pe-2
+                                    i.bi-heart
+                                .item-detail-main-image-wrapper
+                                    img.img-fluid(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg", alt="")
+                    .col-md-5.col-xl-4#item-detail-pricing-wrapper.text-end
+                        .row.mt-3.mt-md-0.align-items-end
+                            .col-6.text-start
+                                small.text-success On Sale Now! 
+                            .col-6
+                                small.d-block From
+                                    spanps-2.h2.item-detail-price 6370 
+                            .col-12.my-3
+                                .row.align-items-end
+                                    .col-6.text-start
+                                        label(for="quantity") Quantity 
+                                        .input-group
+                                            button#button-addon1.btn.btn-outline-secondary(type='button') 
+                                                i.bi-dash
+                                            input.form-control.text-center(type='text' placeholder='1' aria-label='Example text with button addon' aria-describedby='button-addon1')
+                                            button#button-addon2.btn.btn-outline-secondary(type='button') 
+                                                i.bi-plus
+                                    .col-6
+                                        a.btn.btn-outline-primary.w-100(href="#") Add to Cart
+                                    .col-12.mt-3.text-start
+                                        label(for="select") Select Delivery Method
+                                        select.form-select(aria-label='Default select example')
+                                            option(selected='') Delivery Options
+                                            option(value='1') Ship to Address
+                                            option(value='2') In-Store Pickup 
+                            .col-12.mb-3.text-start
+                                p.mb-0.text-muted You will select the store during checkout.
+                                a(href="#")
+                                    span.i.bi-geo-alt-fill 
+                                    span See available stores near you.
+                            .col-12#item-detail-available-stores.text-start
+                                ul.list-group.list-group-flush
+                                    -for(i=0; i<5; i++)
+                                        li.list-group-item
+                                            .row
+                                                .col-2
+                                                    img.img-responsive(src="https://isiprogram.rewardtrax.com/images/bestbuyImg.png", alt="")
+                                                .col-10
+                                                    p.mb-0 Order Today, Pick up on 1/25/2021
+
+                            .col-12
+                                .alert.alert-primary.text-start.mb-0 
+                                    small.mb-0 Quantity limit of 3 per order. In-store pickup is available.
+                    .col-12.mt-3
+                        h5 Item Details
+                    .col-12#item-detail-item-description
+                        p The new AirPods combine intelligent design with breakthrough technology and crystal-clear sound. Powered by the new Apple H1 headphone chip, AirPods now feature hands-free access to Siri using just your voice. And up to 3 hours of talk time on a single charge.¹ 
+                    include ../components/shopping-disclaimer.pug

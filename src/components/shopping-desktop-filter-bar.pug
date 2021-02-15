@@ -1,0 +1,44 @@
+#shopping-desktop-filter-bar.d-none.d-lg-block
+    .mb-4
+        h6.shopping-desktop-filter-title Filter by Department
+        ul.list-group.list-group-flush
+                li.list-group-item  Electronics
+                li.list-group-item  Electronics
+                li.list-group-item  Electronics
+                li.list-group-item  Electronics
+                li.list-group-item  Electronics
+    .mb-4
+        h6.shopping-desktop-filter-title Filter by Points
+        .row.align-items-center
+            .col-5
+                label.form-label(for='shopping-min-points') Min Points
+                input#shopping-min-points.form-control(type='text')
+
+            .col-2.text-center
+                small.mb-0  -to-
+            .col-5
+                label.form-label(for='shopping-max-points') Max Points
+                input#shopping-max-points.form-control(type='text')
+            .col-12.mt-3
+                a.btn.btn-outline-primary.w-100(href="#") Apply Filter
+    .mb-0
+        h6.shopping-desktop-filter-title Filter by Brand
+        .mt-2
+            .form-check
+                input#flexCheckDefault.form-check-input(type='checkbox' value='')
+                label.form-check-label(for='flexCheckDefault')
+                    | SaharaCase
+            .form-check
+                input#flexCheckChecked.form-check-input(type='checkbox' value='' checked='')
+                label.form-check-label(for='flexCheckChecked')
+                    | LAUT
+            .form-check
+                input#flexCheckDefault.form-check-input(type='checkbox' value='')
+                label.form-check-label(for='flexCheckDefault')
+                    | Catalyst
+            .form-check
+                input#flexCheckChecked.form-check-input(type='checkbox' value='' checked='')
+                label.form-check-label(for='flexCheckChecked')
+                    | Native Union
+         
+        

@@ -1,0 +1,57 @@
+.table-responsive
+    table.table.bg-white
+        thead
+            tr
+                th(scope='col') #
+                th(scope='col') Promotion Name
+                th.text-end(scope='col') Awarded
+                th.text-end(scope='col') Approved
+                th.text-end(scope='col') Pending
+                th.text-end(scope='col') Needs Verfication
+                th.text-end(scope='col') Denied
+                th(scope='col') 
+        tbody
+            tr
+                th(scope='row') 1
+                    td Promotion 3 - Verification
+                    td.text-end 0
+                    td.text-end 0
+                    td.text-end 16
+                    td.text-end 0
+                    td.text-end 0
+                    td 
+                        a(data-bs-toggle="collapse" href="#promo-claims-history-table-1" role="button" aria-expanded="false" aria-controls="promo-claims-history-table-1") Details
+            tr.collapse#promo-claims-history-table-1
+                td(colspan='8')
+                        table.table.bg-light.mb-0
+                            thead
+                                tr
+                                    th(scope="col") Invoice Number
+                                    th(scope="col") Product Code
+                                    th(scope="col") Claim Date
+                                    th.text-end(scope="col") Quantity
+                                    th.text-end(scope="col") Status
+                                    th.text-end(scope="col") Amount
+                                    th.text-end(scope="col") Payout
+                            tbody
+                                -for(i=0;i<5; i++)
+                                    tr
+                                        td 32344
+                                        td
+                                            a(href="./claim-detail.html") 15876
+                                        td 5/1/2020
+                                        td.text-end 1
+                                        td.text-end  Need Verification
+                                        td.text-end $2,478.00
+                                        td.text-end 2
+                            
+            tr
+                th(scope='row') 2
+                    td Promotion Example - Claims with Verification
+                    td.text-end 0
+                    td.text-end 0
+                    td.text-end 16
+                    td.text-end 0
+                    td.text-end 0
+                    td 
+                        a(href="./claim-history.html") Details

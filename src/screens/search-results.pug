@@ -1,0 +1,80 @@
+extends ../screens/layout.pug
+
+block content-wrapper
+    .col-12.mx-auto.py-3.token-bg
+        block content
+            .container
+                include ../components/shopping-navbar.pug
+                .row.my-3.align-items-center.justify-content-between 
+                    .col-4.col-sm-7.col-md-4
+                        small.search-results-count 264 Items
+
+                    .col-8.col-sm-5.col-md-4.col-lg-2
+                        select.form-select(aria-label='Default select example')
+                            option(selected='') Sort By:
+                            option(value='1') Best Selling
+                            option(value='2') Points: Low to High
+                            option(value='3') Points: High to Low
+                        
+
+
+                .row.mt-lg-0
+                    .col-12.col-lg-4.col-xl-3.mb-3
+                        include ../components/shopping-mobile-filter-bar.pug
+
+                        include ../components/shopping-desktop-filter-bar.pug
+
+                    .col-12.col-lg-8.col-xl-9
+                        .row#breadcrumb.mb-3.d-none.d-md-flex
+                            .col-12.bg-light.pt-2
+                                nav(aria-label="breadcrumb")
+                                    ol.breadcrumb  
+                                        li.breadcrumb-item
+                                            a(href="#") Catalog
+                                        li.breadcrumb-item
+                                            a(href="#") Electronics
+                                        li.breadcrumb-item.active(aria-current="page") Airpods
+
+                        .row#search-results-grid
+                            -for(i=0; i< 20; i++)
+                                .col-6.col-lg-3.mb-5
+                                    .card.mb-2
+                                        .favorite-item.text-end.pe-2
+                                            i.bi-heart
+                                        .card-body
+                                            
+
+                                            .shopping-img-wrapper.text-center
+                                                img(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400fp.gif", alt="")
+                                    
+                                    a.shopping-carousel-item-title.d-block.mb-2(href="./item-details.html") Apple - AirPods with Charging Case (Latest Model) - White
+                                    .row.justify-content-around
+                                        .col-sm-6
+                                            p.mb-0.shopping-carousel-item-price 6370
+                                                small.text-muted  points
+                                        .col-sm-6.text-md-end.on-sale
+                                            small.text-success On Sale Now!
+                                        .col-12
+                                            .in-store-pickup
+                                                small
+                                                    span.pe-1
+                                                        i.bi-patch-check-fill.text-primary
+                                                    span In-store Pickup Available
+
+                .row.my-3
+                    .col-12.col-md-8.mx-auto#pagination
+                        nav(aria-label='...')
+                            ul.pagination.justify-content-center
+                                li.page-item.disabled
+                                    a.page-link(href='#' tabindex='-1' aria-disabled='true') Previous
+                                li.page-item
+                                    a.page-link(href='#') 1
+                                li.page-item.active(aria-current='page')
+                                    a.page-link(href='#') 2
+                                li.page-item
+                                    a.page-link(href='#') 3
+                                li.page-item
+                                    a.page-link(href='#') Next
+                .row
+                    include ../components/shopping-disclaimer.pug
+

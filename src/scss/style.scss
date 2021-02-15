@@ -1,0 +1,21 @@
+main {
+  background-image: url("https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.app-content-wrapper,
+.form-bg,
+.screen-title-bg,
+.token-bg {
+  background: rgba(255, 255, 255, 0.75);
+  //   background: transparent;
+}
+
+.promo-card {
+  .card-body.kpi-card-body {
+    padding: 0.5rem;
+  }
+}

@@ -1,0 +1,60 @@
+#mobile-shopping-filter-bar.d-lg-none
+    button.btn.btn-outline-primary.w-100(type='button' data-bs-toggle='collapse' data-bs-target='#collapse-mobile-shopping-filter' aria-expanded='false' aria-controls='collapse-mobile-shopping-filter')
+        | Filter Search Results
+    #collapse-mobile-shopping-filter.collapse
+        #shopping-filter.accordion
+            .accordion-item
+                h5#headingOne.accordion-header
+                button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+                    | Filter By Department
+                #collapseOne.accordion-collapse.collapse.show(aria-labelledby='headingOne' data-bs-parent='#shopping-filter')
+                    .accordion-body
+                        ul.list-group.list-group-flush
+                            li.list-group-item  Electronics
+                            li.list-group-item  Electronics
+                            li.list-group-item  Electronics
+                            li.list-group-item  Electronics
+                            li.list-group-item  Electronics
+                        
+            .accordion-item
+                h5#headingTwo.accordion-header
+                button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                    | Filter By Points
+                #collapseTwo.accordion-collapse.collapse(aria-labelledby='headingTwo' data-bs-parent='#shopping-filter')
+                    .accordion-body
+                        
+                        .row.align-items-end
+                            .col-5.col-md-3
+                                label.form-label(for='shopping-min-points') Min Points
+                                input#shopping-min-points.form-control(type='text')
+
+                            .col-2.text-center
+                                small.mb-0  -to-
+                            .col-5.col-md-3
+                                label.form-label(for='shopping-max-points') Max Points
+                                input#shopping-max-points.form-control(type='text')
+                            .col-12.col-md-4.mt-3
+                                a.btn.btn-outline-primary.w-100(href="#") Apply Filter
+            .accordion-item
+                h5#headingThree.accordion-header
+                button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                    | Filter By Brand
+                #collapseThree.accordion-collapse.collapse(aria-labelledby='headingThree' data-bs-parent='#shopping-filter')
+                    .accordion-body
+
+                            .form-check
+                                input#flexCheckDefault.form-check-input(type='checkbox' value='')
+                                label.form-check-label(for='flexCheckDefault')
+                                    | SaharaCase
+                            .form-check
+                                input#flexCheckChecked.form-check-input(type='checkbox' value='' checked='')
+                                label.form-check-label(for='flexCheckChecked')
+                                    | LAUT
+                            .form-check
+                                input#flexCheckDefault.form-check-input(type='checkbox' value='')
+                                label.form-check-label(for='flexCheckDefault')
+                                    | Catalyst
+                            .form-check
+                                input#flexCheckChecked.form-check-input(type='checkbox' value='' checked='')
+                                label.form-check-label(for='flexCheckChecked')
+                                    | Native Union

@@ -1,0 +1,45 @@
+extends ../screens/layout.pug
+
+block content-wrapper
+    .col-12.mx-auto.py-3.token-bg
+        include ../components/screen-title.pug
+
+        block content
+            .row
+                .col-12
+                    .card
+                        .card-body#transaction-order-details
+                            .table-responsive
+                                table.table.bg-white
+                                    thead
+                                        tr
+                                            
+                                            th(scope='col') Shipping Address
+                                            th(scope='col') Order Date
+                                            th(scope='col') Order Number
+                                            th(scope='col') Items Not Shipped
+                                            th(scope='col') Est. Ship Date
+                                            th(scope='col') Quantity
+                                            th(scope='col') Item
+                                            th.text-end(scope='col') Total
+
+                                    tbody
+                                        -for(i=0;i<6; i++)
+                                            tr
+                                                td(scope='col' width="15%") 
+                                                    p.mb-0 
+                                                        span.d-block Demo User
+                                                        span.d-block 123 Main St.
+                                                        span.d-block Atlanta, GA 30341
+                                                td(scope='col') 2/8/2021
+                                                td(scope='col') Demo09187230
+                                                td(scope='col') 
+                                                td(scope='col') 
+                                                td(scope='col') 1
+                                                td(scope='col' width="20%") 
+                                                    p.mb-0
+                                                        span.fw-bold *Canceled* 
+                                                        span A Charlie Brown Christmas, Vince Guaraldi Trio/Vince Guaraldi, October 2012 
+                                                td.text-end(scope='col') 2,472
+
+            

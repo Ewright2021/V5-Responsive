@@ -1,0 +1,24 @@
+.row#shopping-navbar
+    .col-8.col-md-3.col-xl-2.order-1.mb-3
+        a.btn.btn-primary.w-100(href="#") Departments
+    .col-4.col-md-2.col-xl-1.order-2.order-md-3
+        .row
+            .col-6.text-center
+                a.lead(href="../templates/shopping-cart.html")
+                    i.bi-basket.d-block
+                    span.d-none Cart
+            .col-6
+                a.lead(href="../templates/wishlist.html")
+                    i.bi-heart.d-block
+                    span.d-none List
+                    
+    .col-12.col-md-7.col-xl-9.order-3.order-md-2
+        .input-group
+            
+            select.form-select.d-none.d-xl-block(name="dept-dropdown" style="width: 100px!important;")
+                option(value="Apple Store") All Departments
+                option(value="Apple Store") Apple Store
+                option(value="Apple Store") Baby
+            input.form-control(type="text")
+            a.btn.btn-primary(href="#")
+                i.bi-search
