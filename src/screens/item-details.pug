@@ -3,7 +3,7 @@ extends ../screens/layout.pug
 block content-wrapper
     .col-12.mx-auto.py-3.token-bg
         block content
-            .container
+            .container.py-3.token-bg
                 include ../components/shopping-navbar.pug
                 .row
                     .col-12.col-xl-8.mb-3
@@ -13,14 +13,14 @@ block content-wrapper
                         h4.mb-0.item-detail-item-title Apple AirPods w/ Wireless Charging Case
                         small.font-weight-bold.pe-1 Model Number:
                             span.item-detail-model-number MV7N2AM/A 
-                    .col-12.col-md-7.col-xl-8
+                    .col-12.col-md-6.col-lg-7.col-xl-8
                         .card
                             .card-body
                                 .favorite-item.text-end.pe-2
                                     i.bi-heart
                                 .item-detail-main-image-wrapper
                                     img.img-fluid(src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6084/6084400_sd.jpg", alt="")
-                    .col-md-5.col-xl-4#item-detail-pricing-wrapper.text-end
+                    .col-md-6.col-lg-5.col-xl-4#item-detail-pricing-wrapper.text-end
                         .row.mt-3.mt-md-0.align-items-end
                             .col-6.text-start
                                 small.text-success On Sale Now! 

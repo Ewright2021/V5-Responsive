@@ -5,24 +5,25 @@ block content-wrapper
         include ../components/screen-title.pug
 
         block content
-            include ../components/section-title.pug
-           
-            .row.mb-3
-                .col-12
-                    .card
-                        .card-body#my-promotions
-                            include ../components/promo-table.pug
+            .container.token-bg.py-3
+                include ../components/section-title.pug
             
-            include ../components/section-title.pug
-            .row.mb-3
-                .col-12
-                    include ../components/my-account-point-token.pug
-            
-            include ../components/section-title.pug
-            .row
-                .col-12
-                    .card
-                        .card-body#transaction-history
-                            include ../components/my-account-transaction-table.pug
+                .row.mb-3
+                    .col-12
+                        .card
+                            .card-body#my-promotions
+                                include ../components/promo-table.pug
+                
+                include ../components/section-title.pug
+                .row.mb-3
+                    .col-12
+                        include ../components/my-account-point-token.pug
+                
+                include ../components/section-title.pug
+                .row
+                    .col-12
+                        .card
+                            .card-body#transaction-history
+                                include ../components/my-account-transaction-table.pug
                           
 

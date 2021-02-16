@@ -3,9 +3,9 @@ extends ../screens/layout.pug
 block content-wrapper
     .col-12.mx-auto.py-3.token-bg
         block content
-            .container
+            .container.token-bg.py-3
                 include ../components/shopping-navbar.pug
-                .row.my-3.align-items-center.justify-content-between 
+                .row.my-2.align-items-center.justify-content-between 
                     .col-4.col-sm-7.col-md-4
                         small.search-results-count 264 Items
 
@@ -19,16 +19,16 @@ block content-wrapper
 
 
                 .row.mt-lg-0
-                    .col-12.col-lg-4.col-xl-3.mb-3
+                    .col-12.col-lg-4.col-xl-3.mb-0
                         include ../components/shopping-mobile-filter-bar.pug
 
                         include ../components/shopping-desktop-filter-bar.pug
 
                     .col-12.col-lg-8.col-xl-9
                         .row#breadcrumb.mb-3.d-none.d-md-flex
-                            .col-12.bg-light.pt-2
-                                nav(aria-label="breadcrumb")
-                                    ol.breadcrumb  
+                            .col-12.pt-2
+                                nav.bg-light.p-3(aria-label="breadcrumb")
+                                    ol.breadcrumb.mb-0.small  
                                         li.breadcrumb-item
                                             a(href="#") Catalog
                                         li.breadcrumb-item
@@ -37,9 +37,9 @@ block content-wrapper
 
                         .row#search-results-grid
                             -for(i=0; i< 20; i++)
-                                .col-6.col-lg-3.mb-5
+                                .col-6.col-md-4.col-xl-3.mb-5
                                     .card.mb-2
-                                        .favorite-item.text-end.pe-2
+                                        .favorite-item.text-end.pt-2.pe-2
                                             i.bi-heart
                                         .card-body
                                             

@@ -1,5 +1,6 @@
 main {
-  background-image: url("https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png");
+  //   background-image: url("https://www.rewardtrax.com/brandeddemo15/images/ChairsOnBeach.png");
+  background-image: url("https://images.pexels.com/photos/733174/pexels-photo-733174.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -17,5 +18,36 @@ main {
 .promo-card {
   .card-body.kpi-card-body {
     padding: 0.5rem;
+  }
+}
+@mixin responsiveImg($width, $height) {
+  width: $width;
+  height: $height;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    margin: auto;
+  }
+}
+
+// Shopping
+.shopping-header-image-wrapper {
+  @include responsiveImg(100%, 260);
+  background-image: url("https://www.rewardtrax.com/brandeddemo15/V5/images/shoppingHeader_electronics.jpg");
+}
+
+.item-detail-main-image-wrapper {
+  @include responsiveImg(260, 260);
+}
+
+@media (min-width: 1400px) {
+  .item-detail-main-image-wrapper {
+    @include responsiveImg(100%, 520);
   }
 }
