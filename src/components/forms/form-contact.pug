@@ -1,0 +1,26 @@
+form#contact-form(action="") 
+    .mb-3 
+        label.form-label(for="contact-name") Name 
+        input.form-control#contact-name(type="text") 
+    .mb-3 
+        label.form-label(for='exampleFormControlInput1') Email address
+        input#exampleFormControlInput1.form-control(type='email' placeholder='name@example.com')
+
+    .mb-3 
+        label.form-label(for="contact-phone") Daytime Phone
+        input.form-control#contact-phone(type="text") 
+    .mb-3 
+        label.form-label(for="contact-phone") Subject
+        select.form-select(aria-label="Subject")
+            option(value="1") Catalog Question
+            option(value="2") My Shopping Order
+            option(value="3") Track an Order
+            option(value="4") Return an Item
+            option(value="5") An Award Correction
+            option(value="6") Program Question
+            option(value="7") Other
+    .mb-3 
+        label.form-label(for="contact-message") Your Comment
+        textarea.form-control#contact-message(name="", cols="30", rows="3") 
+    .mb-3 
+        a.btn.btn-primary.w-100(href="#") Send Message
