@@ -1,0 +1,10 @@
+extends ../screens/layout.pug
+
+block content-wrapper
+    .col-lg-8.mx-auto.py-3.token-bg
+        include ../components/screen-title.pug
+
+        block content
+            .container.token-bg.py-3
+                -for(i=0; i< 4; i++)
+                    include ../components/claims-form-current.pug
