@@ -1,0 +1,13 @@
+extends ../screens/layout.pug
+
+block content-wrapper
+    .col-lg-6.mx-auto.py-3.token-bg
+        include ../components/screen-title.pug
+
+        block content
+            .container.token-bg.py-3
+                .row
+                    .col-12
+                        p Claim your points by entering the certificate number found on your On-the-Spot certificate. 
+                        img.img-fluid.mb-3(src="https://www.rewardtrax.com/brandeddemo15/images/ISIQuickpoints_Demo15.jpg", alt="")
+                        include ../components/forms/form-quickpoints.pug

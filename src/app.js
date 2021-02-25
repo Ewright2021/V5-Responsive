@@ -205,6 +205,14 @@ const navitems = [
     footer: false,
     showInNav: false,
   },
+  {
+    id: 25,
+    name: "Program Enrollment",
+    path: "./enroll.html",
+    public: true,
+    footer: false,
+    showInNav: false,
+  },
 ];
 
 // Load program data
