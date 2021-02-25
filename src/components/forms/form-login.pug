@@ -1,11 +1,11 @@
 form#form-login
     .mb-3
-        label.form-label(for='exampleInputEmail1') Email address
-        input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+        label.form-label(for='email') Email address
+        input#email.form-control.loginusername(type='email' aria-describedby='emailHelp' required)
         
     .mb-3
-        label.form-label(for='exampleInputPassword1') Password
-        input#exampleInputPassword1.form-control(type='password')
+        label.form-label(for='password' required) Password
+        input#password.loginpassword.form-control(type='password')
     .mb-3
         a(href="/dist/screens/forgot-password.html") Forgot Password?
-    button.btn.btn-primary.w-100(type='submit') Login
+    button#cmdSubmit.loginbutton.btn.btn-primary.w-100(type='submit') Login

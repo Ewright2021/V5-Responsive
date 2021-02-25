@@ -1,13 +1,13 @@
 
 <form id="form-login">
   <div class="mb-3">
-    <label class="form-label" for="exampleInputEmail1">Email address</label>
-    <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp"/>
+    <label class="form-label" for="email">Email address</label>
+    <input class="form-control loginusername" id="email" type="email" aria-describedby="emailHelp" required="required"/>
   </div>
   <div class="mb-3">
-    <label class="form-label" for="exampleInputPassword1">Password</label>
-    <input class="form-control" id="exampleInputPassword1" type="password"/>
+    <label class="form-label" for="password" required="required">Password</label>
+    <input class="loginpassword form-control" id="password" type="password"/>
   </div>
   <div class="mb-3"><a href="/dist/screens/forgot-password.html">Forgot Password?</a></div>
-  <button class="btn btn-primary w-100" type="submit">Login</button>
+  <button class="loginbutton btn btn-primary w-100" id="cmdSubmit" type="submit">Login</button>
 </form>
