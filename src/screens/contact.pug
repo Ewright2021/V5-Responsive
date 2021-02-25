@@ -1,9 +1,11 @@
 extends ../screens/layout.pug
 
-block content
-    .row
-        .col-12.token-bg.p-3
-            p If you have a specific question or concern about this program or website that was not addressed, please complete the form below. We will reply to your inquiry within one business day. 
-    .row 
-        .col-12.token-bg.p-3 
-            include ../components/forms/form-contact.pug
+block content-wrapper
+    .col-lg-6.mx-auto.py-3.token-bg
+        include ../components/screen-title.pug
+
+        block content
+            .container.token-bg.py-3
+                .row
+                    .col-12
+                    include ../components/forms/form-contact.pug

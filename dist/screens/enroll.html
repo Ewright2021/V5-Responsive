@@ -1,0 +1,153 @@
+<!DOCTYPE html.h-100.d-flex.flex-column>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!-- Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="../../src/scss/style.css"/>
+  <title>V5 Responsive</title>
+</head>
+<body class="h-100 d-flex flex-column">
+  <header>
+    <div class="container-fluid">
+      <div class="row bg-warning">
+        <div class="col-4 col-sm-2 py-2 mx-auto"><img class="img-fluid" id="program-logo" src="" alt=""/></div>
+      </div>
+      <div class="row">
+        <div class="col-12 bg-light">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <button class="ms-auto navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-nav" aria-controls="header-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="header-nav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-center header-nav"></ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="flex-grow-1 d-flex flex-column align-items-center justify-content-center py-3">
+    <div class="container">
+      <div class="row"> 
+        <div class="col-lg-6 mx-auto py-3 token-bg">
+          <div class="row pb-3">
+            <div class="col-12 text-center">
+              <div class="screen-title-bg py-3">
+                <h1 id="screen-title">Screen Title</h1>
+                <p class="lead mb-0" id="screen-byline">Default Subtitle</p>
+              </div>
+            </div>
+          </div>
+          <div class="container token-bg py-3">
+            <div class="row mb-3">
+              <div class="col-12">
+                <form id="form__enrollment" action="">
+                  <div class="form-group mb-3">
+                    <label for="enrollment__first-name">First Name</label>
+                    <input class="form-control" id="enrollment__first-name" type="text"/>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="enrollment__last-name">Last Name</label>
+                    <input class="form-control" id="enrollment__last-name" type="text"/>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="enrollment__birth-date">Birth Date</label>
+                    <div class="input-group date">
+                      <input class="form-control" id="enrollment__birth-date" type="text" required="required"/>
+                      <div class="input-group-append"><span class="input-group-text"><span class="fas fa-calendar bi bi-calendar-event d-block h-100 py-2"></span></span></div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="enrollment__hire-date">Hire Date</label>
+                    <div class="input-group date">
+                      <input class="form-control" id="enrollment__hire-date" type="text" required="required"/>
+                      <div class="input-group-append"><span class="input-group-text"><span class="fas fa-calendar bi bi-calendar-event d-block h-100 py-2"></span></span></div>
+                    </div>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="enrollment__communication-preference">Communication Preference</label>
+                    <select class="custom-select form-select" id="enrollment__communication-preference" name="">
+                      <option value="Choose..." selected="selected">Choose</option>
+                      <option value="Email">Emails</option>
+                      <option value="SMS/Text">SMS/Text Message</option>
+                      <option value="Push Notification">Push Notfication</option>
+                    </select><small>*Not all communication is able to be sent to your preference.</small>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="enrollment__email">Email Address</label>
+                    <input class="form-control" id="enrollment__email" type="email"/>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="enrollment__phone-number">Phone Number</label>
+                    <input class="form-control" id="enrollment__phone-number" type="text"/>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="enrollment__address">Street Address</label>
+                    <input class="form-control" id="enrollment__address" type="text"/>
+                  </div>
+                  <div class="form-group mb-3">
+                    <div class="row">
+                      <div class="col-lg-7 mb-3 mb-lg-0">
+                        <label for="enrollment__city">City</label>
+                        <input class="form-control" id="enrollment__city" type="text"/>
+                      </div>
+                      <div class="col-lg-2 mb-3 mb-lg-0">
+                        <label for="enrollment__state">State</label>
+                        <input class="form-control" id="enrollment__state" type="text"/>
+                      </div>
+                      <div class="col-lg-3 mb-3 mb-lg-0">
+                        <label for="enrollment__zip">Zip</label>
+                        <input class="form-control" id="enrollment__zip" type="text"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group border-bottom mb-3">
+                    <h2>Create Password</h2>
+                  </div>
+                  <div class="form-group mb-3">
+                    <p>Passwords must be at least 8 characters and include at least one upper case letter, one lower case letter, and one number.</p>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="enrollment__password">Password</label>
+                    <input class="form-control" id="enrollment__password" type="password"/>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="enrollment__confirm-password">Confirm Password</label>
+                    <input class="form-control" id="enrollment__confirm-password" type="password"/>
+                  </div>
+                  <div class="form-group bg-light p-3 mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" id="agree__to__terms" type="checkbox"/>
+                      <label class="form-check-label" for="agree__to__terms">I have read and accept the <span> <a href="/dist/pages/terms.html">Terms of Use Agreement </a></span><span> that governs the site which includes my consent to receive program related emails.</span></label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-primary btn-block" id="enrollment_submit_btn" type="submit">Complete Enrollment</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container-fluid">
+      <div class="row bg-light small"> 
+        <div class="col-12 text-center">
+          <ul class="nav justify-content-center footer-nav"></ul>
+        </div>
+      </div>
+      <div class="row bg-warning">
+        <div class="col-12 py-3"><small class="d-block text-center">Copyright &copy; 2021 RewardTrax.com</small></div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="../../src/app.js"></script>

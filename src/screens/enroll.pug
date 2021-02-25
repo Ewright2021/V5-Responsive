@@ -1,0 +1,11 @@
+extends ../screens/layout.pug
+
+block content-wrapper
+    .col-lg-6.mx-auto.py-3.token-bg
+        include ../components/screen-title.pug
+
+        block content
+            .container.token-bg.py-3
+                .row.mb-3
+                    .col-12
+                        include ../components/forms/form-enrollment.pug
